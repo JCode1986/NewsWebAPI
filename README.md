@@ -16,3 +16,6 @@ Visual Studio Code 1.59.0
 - Getbootstrap
 - Node.js
 
+## API
+- [News API](https://newsapi.org/)
+
