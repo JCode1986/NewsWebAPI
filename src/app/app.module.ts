@@ -8,12 +8,16 @@ import {NewsapiservicesService} from './service/newsapiservices.service';
 import { TechnewsComponent } from './technews/technews.component';
 import { BusinessnewsComponent } from './businessnews/businessnews.component'
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnews.component';
+import { HealthnewsComponent } from './healthnews/healthnews.component';
 @NgModule({
   declarations: [
     AppComponent,
     TopheadingComponent,
     TechnewsComponent,
-    BusinessnewsComponent
+    BusinessnewsComponent,
+    EntertainmentnewsComponent,
+    HealthnewsComponent
   ],
   imports: [
     BrowserModule,
