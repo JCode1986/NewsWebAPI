@@ -10,6 +10,8 @@ import { BusinessnewsComponent } from './businessnews/businessnews.component'
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnews.component';
 import { HealthnewsComponent } from './healthnews/healthnews.component';
+import { SportsnewsComponent } from './sportsnews/sportsnews.component';
+import { SciencenewsComponent } from './sciencenews/sciencenews.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import { HealthnewsComponent } from './healthnews/healthnews.component';
     TechnewsComponent,
     BusinessnewsComponent,
     EntertainmentnewsComponent,
-    HealthnewsComponent
+    HealthnewsComponent,
+    SportsnewsComponent,
+    SciencenewsComponent
   ],
   imports: [
     BrowserModule,
