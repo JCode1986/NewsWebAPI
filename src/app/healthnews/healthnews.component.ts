@@ -14,7 +14,7 @@ export class HealthnewsComponent implements OnInit {
 
   ngOnInit(): void {
     this._services.healthNews().subscribe((result) => {
-      return this.healthnewsDisplay = result.articles;
+      return this.healthnewsDisplay = result.data;
     })
   }
 

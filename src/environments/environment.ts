@@ -3,8 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  API_KEY: "3aca71ea335d4e12921a9505de371d22"
+  production: true,
+  //news api
+  // API_KEY: "3aca71ea335d4e12921a9505de371d22",
+  // news media api key
+  API_KEY: "2bdd3e005df26c5cc8c629dbbeeff858",
+  API_Url: 'http://api.mediastack.com/v1/news?access_key='
 };
 
 /*

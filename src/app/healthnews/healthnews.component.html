@@ -3,8 +3,9 @@
     <div class="row">
         <div *ngFor="let d of healthnewsDisplay" class="col-lg-3">
             <div class="box">
-                <img src={{d.urlToImage}} onerror="this.src='../assets/images/noImage.png';" width="100%">
+                <img src={{d.image}} onerror="this.src='../assets/images/noImage.png';" width="100%">
                 <h5 class="mt-2">{{d.title}}</h5>
+                <p>Source: {{d.source}}</p>
                 <a href={{d.url}} target="_blank" class="btn btn-dark btn-sm mt-2">Read More</a>
             </div>
         </div>

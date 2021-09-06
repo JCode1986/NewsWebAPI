@@ -9,17 +9,25 @@ import { environment } from '../../environments/environment';
 export class NewsapiservicesService {
 
   constructor(private _http:HttpClient) { }
-  
-  //news web api url
-  ApiUrl = 'https://newsapi.org/v2/top-headlines?country=';
+  //media stacked api key
+  ApiUrl = 'http://api.mediastack.com/v1/news?countries=us'
+  newsApiUrl = `${this.ApiUrl}&access_key=${environment.API_KEY}`;
+  techApiUrl = `${this.ApiUrl}&categories=technology&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
+  businessApiUrl = `${this.ApiUrl}&categories=business&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
+  entertainmentApiUrl = `${this.ApiUrl}&categories=entertainment&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
+  healthApiUrl = `${this.ApiUrl}&categories=health&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
+  sportsApiUrl = `${this.ApiUrl}&categories=sports&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
+  scienceApiUrl = `${this.ApiUrl}&categories=science&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
 
-  newsApiUrl = `${this.ApiUrl}us&language=en&category=general&apiKey=${environment.API_KEY}`;
-  techApiUrl = `${this.ApiUrl}us&category=technology&apiKey=${environment.API_KEY}`;
-  businessApiUrl = `${this.ApiUrl}us&category=business&apiKey=${environment.API_KEY}`;
-  entertainmentApiUrl = `${this.ApiUrl}us&category=entertainment&apiKey=${environment.API_KEY}`;
-  healthApiUrl = `${this.ApiUrl}us&category=health&apiKey=${environment.API_KEY}`;
-  sportsApiUrl = `${this.ApiUrl}us&category=sports&apiKey=${environment.API_KEY}`;
-  scienceApiUrl = `${this.ApiUrl}us&category=science&apiKey=${environment.API_KEY}`;
+    // ================== news web api url for newsapi (paid subscription) ==================
+  // ApiUrl = 'https://newsapi.org/v2/top-headlines?country=';
+  // newsApiUrl = `${this.ApiUrl}us&language=en&category=general&apiKey=3aca71ea335d4e12921a9505de371d22`;
+  // techApiUrl = `${this.ApiUrl}us&category=technology&apiKey=3aca71ea335d4e12921a9505de371d22`;
+  // businessApiUrl = `${this.ApiUrl}us&category=business&apiKey=3aca71ea335d4e12921a9505de371d22`;
+  // entertainmentApiUrl = `${this.ApiUrl}us&category=entertainment&apiKey=3aca71ea335d4e12921a9505de371d22`;
+  // healthApiUrl = `${this.ApiUrl}us&category=health&apiKey=3aca71ea335d4e12921a9505de371d22`;
+  // sportsApiUrl = `${this.ApiUrl}us&category=sports&apiKey=3aca71ea335d4e12921a9505de371d22`;
+  // scienceApiUrl = `${this.ApiUrl}us&category=science&apiKey=3aca71ea335d4e12921a9505de371d22`;
 
   //fetch data
   topHeading():Observable<any> 
