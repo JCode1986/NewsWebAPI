@@ -1,7 +1,0 @@
-{
-    "/api/*": {
-        "target": "https://new-news-now-angular.web.app/",
-        "secure": false,
-        "logLevel": "debug"
-    }
-}

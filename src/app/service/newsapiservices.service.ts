@@ -11,9 +11,9 @@ export class NewsapiservicesService {
   constructor(private _http:HttpClient) { }
   //media stacked api key
   ApiUrl = 'http://api.mediastack.com/v1/news?countries=us'
-  newsApiUrl = `${this.ApiUrl}&access_key=${environment.API_KEY}`;
+  newsApiUrl = `${this.ApiUrl}&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
   techApiUrl = `${this.ApiUrl}&categories=technology&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
-  businessApiUrl = `${this.ApiUrl}&categories=business&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
+  businessApiUrl = `https://new-news-now-angular.web.app/${this.ApiUrl}&categories=business&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
   entertainmentApiUrl = `${this.ApiUrl}&categories=entertainment&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
   healthApiUrl = `${this.ApiUrl}&categories=health&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
   sportsApiUrl = `${this.ApiUrl}&categories=sports&access_key=2bdd3e005df26c5cc8c629dbbeeff858`;
@@ -32,13 +32,13 @@ export class NewsapiservicesService {
   //fetch data
   topHeading():Observable<any> 
   {
-    return this._http.get(this.newsApiUrl)
+    return this._http.get(this.newsApiUrl);
   }
   techNews():Observable<any> {
     return this._http.get(this.techApiUrl);
   }
   businessNews():Observable<any> {
-    return this._http.get(this.businessApiUrl);
+    return this._http.get(this.businessApiUrl)  || [];
   }
   entertainmentNews():Observable<any> {
     return this._http.get(this.entertainmentApiUrl);
