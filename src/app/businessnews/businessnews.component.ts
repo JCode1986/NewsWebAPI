@@ -14,8 +14,7 @@ export class BusinessnewsComponent implements OnInit {
 
   ngOnInit(): void {
     this._services.businessNews().subscribe((result) => {
-      console.log(result, "asdsadasd");
-      return this.businessnewsDisplay = result.data;
+      return this.businessnewsDisplay = result.results;
     })
   }
 
