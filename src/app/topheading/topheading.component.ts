@@ -6,7 +6,7 @@ import {NewsapiservicesService} from '../service/newsapiservices.service';
   styleUrls: ['./topheading.component.scss']
 })
 export class TopheadingComponent implements OnInit {
-
+// test
   constructor(private _services:NewsapiservicesService) { }
 
   topheadingDisplay:any = [];
