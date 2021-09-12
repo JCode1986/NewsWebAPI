@@ -12,6 +12,7 @@ import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnew
 import { HealthnewsComponent } from './healthnews/healthnews.component';
 import { SportsnewsComponent } from './sportsnews/sportsnews.component';
 import { SciencenewsComponent } from './sciencenews/sciencenews.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,7 @@ import { SciencenewsComponent } from './sciencenews/sciencenews.component';
     EntertainmentnewsComponent,
     HealthnewsComponent,
     SportsnewsComponent,
-    SciencenewsComponent
+    SciencenewsComponent,
   ],
   imports: [
     BrowserModule,

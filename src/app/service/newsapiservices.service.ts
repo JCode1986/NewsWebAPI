@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, throwError  } from 'rxjs';
 import { environment } from '../../environments/environment';
 
 @Injectable({
@@ -9,7 +9,7 @@ import { environment } from '../../environments/environment';
 export class NewsapiservicesService {
 
   constructor(private _http:HttpClient) { }
-
+  //"https://newsdata.io"
   //newsdata.io
   newsApiUrl = `/api/1/news?country=us&category=top&apikey=pub_1157b43513205aa3b8308d9b3018cf602068`;
   techApiUrl = `/api/1/news?country=us&category=technology&apikey=pub_1157b43513205aa3b8308d9b3018cf602068`
@@ -22,7 +22,6 @@ export class NewsapiservicesService {
   //fetch data
   topHeading():Observable<any> 
   {
-    console.log('what is this?', this.newsApiUrl)
     return this._http.get(this.newsApiUrl);
   }
   techNews():Observable<any> {
