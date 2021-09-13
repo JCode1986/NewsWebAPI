@@ -79,7 +79,7 @@
               "browserTarget": "NewsWebAPI:build:development",
               "proxyConfig": "proxy.conf.json"
             },
-            "options": {
+              "options": {
               "browserTarget": "NewsWebAPI:build",
               "proxyConfig": "proxy.conf.json"
             }
