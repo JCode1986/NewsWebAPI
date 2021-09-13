@@ -5,6 +5,7 @@ import {NewsapiservicesService} from '../service/newsapiservices.service';
   templateUrl: './topheading.component.html',
   styleUrls: ['./topheading.component.scss']
 })
+
 export class TopheadingComponent implements OnInit {
 
   constructor(private _services:NewsapiservicesService) { }
