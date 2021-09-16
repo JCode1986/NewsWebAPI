@@ -73,15 +73,15 @@
           "configurations": {
             "production": {
               "browserTarget": "NewsWebAPI:build:production",
-              "proxyConfig": "proxy.conf.json"
+              "proxyConfig": "./proxy.conf.json"
             },
             "development": {
               "browserTarget": "NewsWebAPI:build:development",
-              "proxyConfig": "proxy.conf.json"
+              "proxyConfig": "./proxy.conf.json"
             },
               "options": {
               "browserTarget": "NewsWebAPI:build",
-              "proxyConfig": "proxy.conf.json"
+              "proxyConfig": "./proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
