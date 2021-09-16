@@ -1,10 +1,7 @@
 {
-    "/api": {
+    "/api/*": {
         "target": "https://newsdata.io",
-        "secure": true,
-        "changeOrigin": true,
-        "pathRewrite": {
-            "^/api": ""
-        }
+        "secure": false,
+        "logLevel": "debug"
     }
 }
