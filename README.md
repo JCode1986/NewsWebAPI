@@ -10,6 +10,12 @@ All the information you need at the tip of your fingertips.
 ![Alt Text](src/assets/images/health-tab.png)
 
 ---
+## Run locally:
+1. In terminal type `git clone https://github.com/JCode1986/NewsWebAPI.git`
+2. Install dependencies with the command `npm i`
+3. To start Angular Live Development Server run the command `ng serve`
+4. Open browser and copy local host that server is listening to -> ` http://localhost:4200/`
+---
 ## Usage
 1. Select a News Category to render newly updated news from a news API.
 2. Click on read more if interested.
